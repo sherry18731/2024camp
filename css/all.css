@@ -12,11 +12,14 @@ a {
 img {
     max-width: 100%;
     height: auto;
+    vertical-align: middle;
 }
 
 body {
-  padding-top: 60px;
+  /* padding-top: 59px; */
   font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .container {
@@ -34,6 +37,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
+    position: sticky;
 }
 
 .header-inner {
@@ -71,7 +75,7 @@ header {
 .btn {
     display: none;
     cursor: pointer;
-    font-size: 16px;
+    /* font-size: 16px; */
     padding: 8px 12px;
     background-color: #fff;
     border: 0;
@@ -123,6 +127,7 @@ header {
     margin: 0 auto;
     margin-bottom: 59px;
     position:relative;
+    padding: 59px 71px;
 }
 
 .banner-slogan h2 {
@@ -136,7 +141,7 @@ header {
 .banner-slogan:before {
     content: "";
     position: absolute;
-    top: -60px;
+    top: 0px;
     left: 0px;
     background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true);
     width: 72px;
@@ -146,7 +151,7 @@ header {
 .banner-slogan:after {
     content: "";
     position: absolute;
-    bottom: -60px;
+    bottom: 0px;
     right: 0px;
     background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true);
     width: 72px;
@@ -362,7 +367,7 @@ footer{
 font-size: 20px;
 }
 
-.footer-contact h2  {
+.footer-contact .logo  {
 margin-bottom: 24px;
 }
 
@@ -370,12 +375,11 @@ margin-bottom: 24px;
 line-height: 30px;
 }
 
-.footer-contact span{
-    line-height: 24px;
-}
-
-.footer-contact span a {
+.footer-contact a {
     color: #9e9e9e;
+    line-height: 24px;
+  display: inline-block;
+
 }
 
 .footer-social a {
